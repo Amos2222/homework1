@@ -1,0 +1,48 @@
+Last login: Thu Nov  2 19:13:53 on ttys000
+amosdorborjr@AMsdorbors-MacBook-Pro ~ % mkdir Python
+cd Python
+nano pig_latin.py
+
+mkdir: Python: File exists
+amosdorborjr@AMsdorbors-MacBook-Pro Python % python pig_latin.py
+Enter a sentence: i love football
+Traceback (most recent call last):
+  File "pig_latin.py", line 26, in <module>
+    input_sentence = input("Enter a sentence: ")
+  File "<string>", line 1
+    i love football
+         ^
+SyntaxError: invalid syntax
+amosdorborjr@AMsdorbors-MacBook-Pro Python % mkdir Python       
+cd Python
+nano pig_latin.py
+
+mkdir: Python: File exists
+
+
+
+
+  GNU nano 2.0.6             File: pig_latin.py                                 
+
+def pig_latin_translator(sentence):
+    # Split the sentence into individual words
+    words = sentence.split()
+
+    # Define a list to store the Pig Latin words
+    pig_latin_words = []
+
+    # Loop through each word in the sentence
+    for word in words:
+        if len(word) == 1:
+            # For one-letter words, just add 'ay' to the end
+            pig_latin_word = word + 'ay'
+        else:
+            # For words with more than one letter, move the first letter to the$
+            pig_latin_word = word[1:] + word[0] + 'ay'
+
+        # Add the Pig Latin word to the list
+        pig_latin_words.append(pig_latin_word)
+
+                               [ Read 34 lines ]
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Page ^K Cut Text  ^C Cur Pos
+^X Exit      ^J Justify   ^W Where Is  ^V Next Page ^U UnCut Text^T To Spell
